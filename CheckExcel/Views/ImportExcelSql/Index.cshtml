@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-5">
+
+        <form method="post" enctype="multipart/form-data" asp-controller="ImportExcelSql" asp-action="Index">
+            <div class="form-group">
+                <div class="col-md-10">
+                    <h3>Upload File</h3>
+                    <input class="form-control" name="fromFiles" multiple="multiple" type="file" />
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="col-md-10">
+
+                    <input class="btn btn-primary" type="submit" value="Upload File" />
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
